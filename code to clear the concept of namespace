@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;  // here i have write this using namespace std for the standard cout or cin 
+
+ namespace one{   // here i have made my own namespace which i have given the name one
+ void display(){
+ int x=19;
+ cout<<x;
+ }}
+
+ namespace two{  // here i have made my another namespace which i have given the name two
+void display(){
+int x=20;
+cout<<x;
+}}
+
+int main(){
+using namespace one;  // here i want only to get the access of namespace one. // using is a keyword // namespace is also a keyword
+display();  
+}
+
+
+
+  output
+  ------
+  19  // it run the display function, which is under the namespace one.
